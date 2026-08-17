@@ -1,0 +1,78 @@
+generated: '2026-08-17'
+method: searched
+source: https://www.goodvest.fr/mentions-legales
+note: >-
+  Goodvest has no machine-readable API contract, so there is nothing to derive technical
+  conformance from. What it DOES publish is a full regulatory and sustainability-disclosure
+  posture — French insurance-intermediation and financial-advice registrations, plus EU
+  SFDR Article 8/9 fund classifications with per-fund sustainability documents. Those are
+  recorded here as the honest conformance surface for a regulated French wealth-management
+  provider. Every technical/API standard below is `conforms: false` because no API exists,
+  not because it was tested and failed.
+standards:
+- id: orias-registration
+  name: ORIAS — French register of insurance, banking and finance intermediaries
+  conforms: true
+  identifier: '20007544'
+  categories: [Courtier d'assurance (insurance broker), Mandataire non exclusif en opérations de banque]
+  evidence: https://www.goodvest.fr/mentions-legales
+- id: acpr-supervision
+  name: ACPR — Autorité de contrôle prudentiel et de résolution
+  conforms: true
+  evidence: 'Named as supervisor for banking/insurance activity on https://www.goodvest.fr/mentions-legales'
+- id: amf-cif
+  name: AMF — Conseiller en Investissements Financiers via ANACOFI-CIF
+  conforms: true
+  evidence: 'ANACOFI-CIF membership, AMF-approved association, on https://www.goodvest.fr/mentions-legales'
+- id: sfdr-2019-2088
+  name: EU SFDR (Règlement 2019/2088) sustainability-related disclosures
+  conforms: true
+  detail: >-
+    Per-fund Article 8 and Article 9 classification published with three document classes
+    each (document durabilité, document annuel durabilité, informations générales en
+    matière de durabilité). 16 unit-linked supports listed; a minimum of 94% stated as
+    meeting a sustainable investment objective.
+  evidence: https://www.goodvest.fr/informations-durabilite
+- id: gdpr
+  name: GDPR / RGPD
+  conforms: true
+  evidence: https://www.goodvest.fr/reglement-general-sur-la-protection-des-donnees
+- id: entreprise-a-mission
+  name: Entreprise à mission (French PACTE law mission-driven company status)
+  conforms: true
+  evidence: https://www.goodvest.fr/nous-sommes-une-entreprise-a-mission
+- id: paris-agreement-alignment
+  name: Paris Agreement portfolio-alignment methodology (self-published)
+  conforms: true
+  detail: Provider-published methodology, not a third-party certification.
+  evidence: https://www.goodvest.fr/methodologie
+- id: openapi
+  conforms: false
+  evidence: 'No OpenAPI/Swagger document found on any Goodvest host (see x-coverage in apis.yml)'
+- id: oauth2
+  conforms: false
+  evidence: 'No public OAuth surface; /.well-known/oauth-authorization-server 404 on api.goodvest.fr'
+- id: oidc
+  conforms: false
+  evidence: '/.well-known/openid-configuration 404 on api.goodvest.fr'
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API to inspect
+- id: psd2
+  conforms: false
+  evidence: >-
+    Goodvest is an insurance broker and CIF, not an account-servicing payment service
+    provider; it publishes no PSD2/open-banking interface. Its banking partner for the
+    Livret is CFCAL-Banque (Crédit Mutuel Arkéa).
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: '/.well-known/security.txt 404 on every host (see well-known/goodvest-well-known.yml)'
+compliance_program:
+  published: true
+  kind: regulatory-registration-and-sustainability-disclosure
+  certifications: []
+  note: >-
+    No third-party security certifications (SOC 2, ISO 27001, PCI DSS, HIPAA, FedRAMP) are
+    published and no trust center exists (trust.goodvest.fr and security.goodvest.fr do not
+    resolve). The published compliance posture is regulatory (ORIAS/ACPR/AMF) and
+    sustainability-disclosure (SFDR) rather than infosec certification.

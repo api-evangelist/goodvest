@@ -1,0 +1,53 @@
+generated: '2026-08-17'
+method: searched
+source: https://www.goodvest.fr/tarifs
+note: >-
+  Goodvest publishes a complete, public fee schedule for its retail savings products. These
+  are PRODUCT pricing tiers (annual all-in management fees on assets under management), not
+  API plans — Goodvest publishes no API and therefore no API pricing. Captured here because
+  the fee schedule is the provider's real, published commercial surface. Fees are stated as
+  annual percentages of encours (assets under management).
+pricing_model: aum-percentage
+currency: EUR
+billing_period: annual
+plan_count: 3
+plans:
+- name: Assurance-vie Goodvie (gestion pilotée)
+  product: life insurance / unit-linked, piloted management
+  insurer: Generali
+  total_fees: 1.75% - 1.95%
+  fee_breakdown:
+  - {component: Goodvest management fees, rate: '1.00%'}
+  - {component: Insurer fees (Generali), rate: '0.50%'}
+  - {component: Underlying listed fund fees, rate: '~0.40%'}
+- name: Assurance-vie Goodlife (fonds euros, gestion sous mandat)
+  product: life insurance with euro fund, mandate management
+  insurer: Spirica
+  total_fees: 1.65% - 1.85%
+  fee_breakdown:
+  - {component: Goodvest management fees, rate: '1.05%'}
+  - {component: Insurer fees (Spirica), rate: '0.40%'}
+  - {component: Underlying listed fund fees, rate: '~0.40%'}
+  - {component: '"Objectif climat" euro fund fees (indirect)', rate: '2.00%'}
+- name: Plan Épargne Retraite (PER) — gestion pilotée
+  product: retirement savings plan
+  insurer: Generali
+  total_fees: 1.55% - 1.75%
+  fee_breakdown:
+  - {component: Goodvest management fees, rate: '0.90%'}
+  - {component: Insurer fees (Generali), rate: '0.40%'}
+  - {component: Underlying listed fund fees, rate: '~0.40%'}
+zero_fees:
+- {fee: entry / subscription fees, rate: '0%'}
+- {fee: exit / withdrawal fees, rate: '0%'}
+- {fee: arbitrage / reallocation fees, rate: '0%'}
+- {fee: performance fees, rate: '0%'}
+disclosures:
+  insurer_fee_range: 0.40% - 0.60%
+  average_goodvest_management_fee: '0.90%'
+  retrocessions: >-
+    Excluded from gestion pilotée; disclosed separately for alternative investments
+    (private equity, real estate, structured products).
+api_pricing:
+  published: false
+  note: No API product, API plan, or developer pricing is published by Goodvest.

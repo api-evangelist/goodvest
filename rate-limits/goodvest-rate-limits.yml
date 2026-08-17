@@ -1,0 +1,17 @@
+generated: '2026-08-17'
+method: searched
+source: https://www.goodvest.fr/sitemap.xml
+limit_count: 0
+note: >-
+  RECORDED ABSENCE. Goodvest publishes no public API and therefore no rate-limit
+  documentation. All 802 URLs in the published sitemap are marketing, product, blog,
+  education and legal pages; none is a developer reference. The private application
+  backend at api.goodvest.fr returns 404 at its root and on every spec/discovery path
+  probed, and exposes no rate-limit headers on an anonymous request. No RateLimits
+  pointer is wired in apis.yml because no limits are published.
+limits: []
+response_headers: []
+exhaustion_status: null
+evidence:
+- {url: 'https://api.goodvest.fr/', status: 404, note: 'gunicorn backend, no public docs'}
+- {url: 'https://www.goodvest.fr/sitemap.xml', status: 200, note: '802 URLs, zero developer/API reference pages'}

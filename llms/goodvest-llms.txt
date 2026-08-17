@@ -1,0 +1,90 @@
+# Goodvest
+
+> Goodvest is a French mission-driven fintech (entreprise à mission, Paris, ORIAS 20007544)
+> selling climate-aligned retail savings: an ISR assurance-vie (Goodvie, insured by Generali),
+> a euro-fund assurance-vie (Goodlife, insured by Spirica), a Plan Épargne Retraite (PER), a
+> minors' contract, a green Livret d'Épargne and a private-management tier (Goodvest First).
+> Portfolios are screened against a published seven-filter methodology aligned with the Paris
+> Agreement — fossil-fuel exclusion, carbon-footprint and biodiversity analysis — and every
+> unit-linked support carries EU SFDR Article 8 or Article 9 disclosures.
+
+## Coverage note for agents
+
+Goodvest publishes **no public API, SDK, webhook surface or developer portal**. There is no
+OpenAPI, GraphQL SDL, AsyncAPI, MCP server or A2A agent card on any Goodvest host. The
+application backend at `https://api.goodvest.fr` is private (gunicorn; HTTP 404 at root and
+on every spec and `/.well-known/` path probed 2026-08-17) and serves only the first-party web
+and mobile clients. `https://app.goodvest.fr` is a single-page application that answers HTTP
+200 with the same HTML shell for every path, so a 200 from that host is not a document.
+Goodvest markets a white-label / "marque grise" partnership to digital platforms, but that is
+a commercial conversation with no published technical contract.
+
+## Products
+
+- [Assurance-vie](https://www.goodvest.fr/assurance-vie-hub): ISR life insurance, gestion pilotée
+- [PER Goodvest](https://www.goodvest.fr/le-per-goodvest): retirement savings plan
+- [Transfert PER](https://www.goodvest.fr/transfert-per): transfer an existing PER in
+- [Goodvest Kids](https://www.goodvest.fr/goodvest-kids): assurance-vie for minors
+- [Livret vert](https://www.goodvest.fr/livret-vert): green savings account (banking partner CFCAL-Banque)
+- [Gestion privée](https://www.goodvest.fr/gestion-privee): private wealth management tier
+- [Private equity](https://www.goodvest.fr/private-equity)
+- [Immobilier durable](https://www.goodvest.fr/immobilier-durable): sustainable real estate
+- [Infrastructures vertes](https://www.goodvest.fr/infrastructures-vertes): green infrastructure
+- [Produits structurés](https://www.goodvest.fr/produits-structures-hub): structured products
+- [ETF ISR](https://www.goodvest.fr/etf-isr)
+
+## Impact and methodology
+
+- [Méthodologie](https://www.goodvest.fr/methodologie): the seven screening filters
+- [Investir dans la transition écologique](https://www.goodvest.fr/investir-dans-la-transition-ecologique)
+- [Notre engagement pour l'environnement](https://www.goodvest.fr/notre-engagement-pour-lenvironnement)
+- [Entreprise à mission](https://www.goodvest.fr/nous-sommes-une-entreprise-a-mission)
+- [Notre raison d'être](https://www.goodvest.fr/notre-raison-detre)
+- [Climat](https://www.goodvest.fr/climat) · [Biodiversité](https://www.goodvest.fr/biodiversite)
+- Thematics: [forêts](https://www.goodvest.fr/investir-dans-les-forets) ·
+  [solutions climatiques](https://www.goodvest.fr/investir-dans-les-solutions-climatique) ·
+  [accès à l'eau](https://www.goodvest.fr/investir-dans-lacces-a-leau) ·
+  [santé](https://www.goodvest.fr/investir-dans-la-sante)
+
+## Commercial
+
+- [Tarifs](https://www.goodvest.fr/tarifs): full published fee schedule — 0% entry, exit,
+  arbitrage and performance fees; all-in annual fees 1.55%–1.95% depending on product
+- [Performances](https://www.goodvest.fr/performances)
+- [Comment ça marche](https://www.goodvest.fr/comment-ca-marche)
+- [Pré-inscription](https://www.goodvest.fr/pre-inscription): sign up
+- [Espace client](https://app.goodvest.fr/): customer application login
+- [Partenariat](https://www.goodvest.fr/partenariat): B2B / white-label partner program (sales-gated)
+
+## Tools and education
+
+- [Simulateurs](https://www.goodvest.fr/simulateurs)
+- [Simulateur épargne](https://www.goodvest.fr/simulateur-epargne-simulez-la-performance-de-votre-epargne)
+- [Simulateur PER](https://www.goodvest.fr/simulateur-per)
+- [L'école de l'investisseur](https://www.goodvest.fr/lecole-de-linvestisseur)
+- [Guide de l'investisseur responsable](https://www.goodvest.fr/guide-de-linvestisseur-responsable)
+- [Lexique de l'investisseur](https://www.goodvest.fr/lexique-de-linvestisseur)
+- [Blog](https://www.goodvest.fr/blog)
+- [Communauté](https://community.goodvest.fr/): public Discourse forum
+
+## Legal and regulatory
+
+- [Mentions légales](https://www.goodvest.fr/mentions-legales): Goodvest SAS, RCS Paris
+  889 263 117, 52 rue de la Chaussée d'Antin, 75009 Paris; ORIAS 20007544; ANACOFI-CIF; ACPR + AMF
+- [Conditions générales d'utilisation](https://www.goodvest.fr/conditions-generales-dutilisation)
+- [RGPD / protection des données](https://www.goodvest.fr/reglement-general-sur-la-protection-des-donnees)
+- [Politique cookies](https://www.goodvest.fr/politique-cookies)
+- [Informations durabilité](https://www.goodvest.fr/informations-durabilite): SFDR Article 8/9 disclosures
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/goodvest/refs/heads/main/apis.yml)
+- [Fee schedule](https://raw.githubusercontent.com/api-evangelist/goodvest/refs/heads/main/plans/goodvest-plans-pricing.yml)
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/goodvest/refs/heads/main/conformance/goodvest-conformance.yml)
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/goodvest/refs/heads/main/security/goodvest-domain-security.yml)
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/goodvest/refs/heads/main/well-known/goodvest-well-known.yml)
+
+## Contact
+
+- hello@goodvest.fr · +33 1 89 20 31 67
+- [GitHub organization](https://github.com/Goodvest): exists (created 2021-03-29), zero public repositories

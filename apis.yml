@@ -1,19 +1,39 @@
 aid: goodvest
 name: Goodvest
-description: 'Goodvest is a company surfaced as a portfolio company of serena and added to the API Evangelist
-  network as a stub for enrichment. Sector: climate-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Goodvest is a French mission-driven fintech (entreprise à mission) based in Paris
+  that sells climate-aligned retail savings and investment products: an ISR assurance-vie
+  (Goodvie, insured by Generali), a euro-fund assurance-vie (Goodlife, insured by Spirica), a
+  Plan Épargne Retraite, a minors'' contract, a green Livret d''Épargne backed by CFCAL-Banque,
+  and a Goodvest First private-management tier covering private equity, sustainable real estate,
+  green infrastructure and structured products. Portfolios are screened against a published
+  seven-filter methodology aligned with the Paris Agreement — fossil-fuel exclusion,
+  carbon-footprint and biodiversity analysis — and every unit-linked support carries EU SFDR
+  Article 8 or Article 9 sustainability disclosures. Goodvest SAS is registered with ORIAS
+  (20007544) as an insurance broker and non-exclusive banking intermediary, is a member of
+  ANACOFI-CIF, and is supervised by the ACPR and the AMF. It publishes a complete public fee
+  schedule (0% entry, exit, arbitrage and performance fees) but no public API, SDK, webhook
+  surface or developer portal of any kind.'
+image: https://cdn.prod.website-files.com/6735d0b3c15a49054e06fe88/67c9766bfd3e213e868d8d80_Open%20graph.avif
 url: https://raw.githubusercontent.com/api-evangelist/goodvest/refs/heads/main/apis.yml
 x-type: company
 x-source: serena-portfolio
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-08-17'
 modified: '2026-08-17'
 tags:
 - Company
 - Climate Tech
+- Fintech
+- Financial Services
+- Investing
+- Wealth Management
+- Sustainable Finance
+- ESG
+- Insurance
+- Retirement
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +41,56 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/goodvest-domain-security.yml
 - type: Website
   url: https://www.goodvest.fr/
+- type: Blog
+  url: https://www.goodvest.fr/blog
+- type: Support
+  url: https://community.goodvest.fr/
+- type: GitHubOrganization
+  url: https://github.com/Goodvest
+- type: Pricing
+  url: https://www.goodvest.fr/tarifs
+- type: Plans
+  url: plans/goodvest-plans-pricing.yml
+- type: SignUp
+  url: https://www.goodvest.fr/pre-inscription
+- type: Login
+  url: https://app.goodvest.fr/
+- type: TermsOfService
+  url: https://www.goodvest.fr/conditions-generales-dutilisation
+- type: PrivacyPolicy
+  url: https://www.goodvest.fr/reglement-general-sur-la-protection-des-donnees
+- type: Conformance
+  url: conformance/goodvest-conformance.yml
+- type: Compliance
+  url: https://www.goodvest.fr/informations-durabilite
+- type: LLMsTxt
+  url: llms/goodvest-llms.txt
+x-enrichment:
+  date: '2026-08-17'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Goodvest ships only end-user web and mobile clients; its private gunicorn backend at
+    api.goodvest.fr returns 404 at the root and on every OpenAPI, GraphQL, MCP and
+    /.well-known/ path probed, and the 802-URL public sitemap contains no developer,
+    reference or API page at all.
+  evidence:
+  - url: https://api.goodvest.fr/openapi.json
+    status: 404
+  - url: https://api.goodvest.fr/graphql
+    status: 404
+  - url: https://api.goodvest.fr/.well-known/agent-card.json
+    status: 404
+  - url: https://www.goodvest.fr/sitemap.xml
+    status: 200
+  - url: https://developer.goodvest.fr/
+    status: 0
+  checked: '2026-08-17'

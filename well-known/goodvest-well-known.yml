@@ -1,0 +1,51 @@
+generated: '2026-08-17'
+method: probed
+source: live GET of /.well-known/* on every Goodvest host found in apis.yml
+note: >-
+  RECORDED ABSENCE. Every /.well-known/ path probed on both goodvest.fr hosts returned
+  404. app.goodvest.fr is a single-page-application catch-all that answers HTTP 200 with
+  the same 20,182-byte HTML shell for every path requested (including /openapi.json and
+  /.well-known/agent-card.json), so its 200s are NOT documents and are recorded as misses.
+  No WellKnown or SecurityTxt pointer is wired in apis.yml because Goodvest serves no
+  well-known document.
+hosts:
+- host: https://api.goodvest.fr
+  role: 'private application backend (server header: gunicorn) powering the Goodvest web app'
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://www.goodvest.fr
+  role: marketing site (Webflow)
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://app.goodvest.fr
+  role: customer web application (SPA)
+  soft_200: true
+  soft_200_note: >-
+    Every path on this host returns HTTP 200 with an identical 20,182-byte HTML shell.
+    None of the 200s below is a document; all are recorded as misses.
+  documents:
+  - {path: /.well-known/security.txt, status: 200, document: false}
+  - {path: /.well-known/openid-configuration, status: 200, document: false}
+  - {path: /.well-known/oauth-authorization-server, status: 200, document: false}
+  - {path: /.well-known/api-catalog, status: 200, document: false}
+  - {path: /.well-known/ai-plugin.json, status: 200, document: false}
+  - {path: /.well-known/agent-card.json, status: 200, document: false}
+  - {path: /.well-known/agent.json, status: 200, document: false}
+summary:
+  documents_found: 0
+  security_txt: false
+  openid_configuration: false
+  api_catalog: false
+  agent_card: false
