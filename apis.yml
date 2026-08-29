@@ -13,6 +13,17 @@ description: 'Goodvest is a French mission-driven fintech (entreprise à mission
   ANACOFI-CIF, and is supervised by the ACPR and the AMF. It publishes a complete public fee
   schedule (0% entry, exit, arbitrage and performance fees) but no public API, SDK, webhook
   surface or developer portal of any kind.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/6735d0b3c15a49054e06fe88/67c9766bfd3e213e868d8d80_Open%20graph.avif
 url: https://raw.githubusercontent.com/api-evangelist/goodvest/refs/heads/main/apis.yml
 x-type: company
