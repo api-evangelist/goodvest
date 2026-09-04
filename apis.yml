@@ -24,6 +24,20 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - plans
+  - rate-limits
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/6735d0b3c15a49054e06fe88/67c9766bfd3e213e868d8d80_Open%20graph.avif
 url: https://raw.githubusercontent.com/api-evangelist/goodvest/refs/heads/main/apis.yml
 x-type: company
