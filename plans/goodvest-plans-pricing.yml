@@ -51,3 +51,27 @@ disclosures:
 api_pricing:
   published: false
   note: No API product, API plan, or developer pricing is published by Goodvest.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Assurance-vie Goodvie (gestion pilotée)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Assurance-vie Goodlife (fonds euros, gestion sous mandat)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Plan Épargne Retraite (PER) — gestion pilotée
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
