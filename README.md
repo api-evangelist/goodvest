@@ -64,6 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Goodvest is a company surfaced as a portfolio company of serena and added to the API Evangelist network as a stub for enrichment. Sector: climate-tech. This profile is a lead awaiting the enrichment pipeline.
+Goodvest is a French mission-driven fintech (entreprise à mission) based in Paris that sells climate-aligned retail savings and investment products: an ISR assurance-vie (Goodvie, insured by Generali), a euro-fund assurance-vie (Goodlife, insured by Spirica), a Plan Épargne Retraite, a minors' contract, a green Livret d'Épargne backed by CFCAL-Banque, and a Goodvest First private-management tier covering private equity, sustainable real estate, green infrastructure and structured products. Portfolios are screened against a published seven-filter methodology aligned with the Paris Agreement — fossil-fuel exclusion, carbon-footprint and biodiversity analysis — and every unit-linked support carries EU SFDR Article 8 or Article 9 sustainability disclosures. Goodvest SAS is registered with ORIAS (20007544) as an insurance broker and non-exclusive banking intermediary, is a member of ANACOFI-CIF, and is supervised by the ACPR and the AMF. It publishes a complete public fee schedule (0% entry, exit, arbitrage and performance fees) but no public API, SDK, webhook surface or developer portal of any kind.
 
-Source: portfolio company of [serena](https://github.com/api-evangelist/serena) — https://www.goodvest.fr/
+**Areas:** Company · Climate Tech · Fintech · Financial Services · Investing · Wealth Management · Sustainable Finance · ESG · Insurance · Retirement · France
+
+## Goodvest on APIs.io
+
+Everything profiled for Goodvest is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/goodvest/](https://apis.io/providers/goodvest/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Goodvest Domain Security](https://apis.io/security/goodvest/goodvest-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Goodvest Plans Pricing](https://apis.io/plans/goodvest/goodvest-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Goodvest Rate Limits](https://apis.io/rate-limits/goodvest/goodvest-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.goodvest.fr/)
+- [Pricing](https://www.goodvest.fr/tarifs)
+- [Sign up](https://www.goodvest.fr/pre-inscription)
+- [Support](https://community.goodvest.fr/)
+- [Blog](https://www.goodvest.fr/blog)
+- [Compliance](https://www.goodvest.fr/informations-durabilite)
+- [Terms of service](https://www.goodvest.fr/conditions-generales-dutilisation)
+- [Privacy policy](https://www.goodvest.fr/reglement-general-sur-la-protection-des-donnees)
+- [GitHub](https://github.com/Goodvest)
+
+## API Evangelist rating
+
+**Kin Score 27.0** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 84.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 21.1** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/goodvest/](https://apis.io/providers/goodvest/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Goodvest: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/goodvest/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
